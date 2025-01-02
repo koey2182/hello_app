@@ -1,14 +1,23 @@
 import Config
 
 # Configure your database
+# config :hello_app, HelloApp.Repo,
+#   username: "postgres",
+#   password: "postGRES!23",
+#   hostname: "localhost",
+#   database: "hello_app_dev",
+#   stacktrace: true,
+#   show_sensitive_data_on_connection_error: true,
+#   pool_size: 10
 config :hello_app, HelloApp.Repo,
-  username: "postgres",
-  password: "postGRES!23",
-  hostname: "localhost",
-  database: "hello_app_dev",
+  username: "687003c3-48b5-48ea-a34e-416ff79c70f2-user",
+  password: "pw-75741878-845e-4982-8e5d-843acf13e827",
+  hostname: "postgres-free-tier-v2020.gigalixir.com",
+  database: "687003c3-48b5-48ea-a34e-416ff79c70f2",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 2,
+  ssl: true
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
